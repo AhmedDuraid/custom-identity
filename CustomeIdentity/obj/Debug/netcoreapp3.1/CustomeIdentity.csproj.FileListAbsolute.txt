@@ -1,0 +1,51 @@
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\CustomeIdentity.exe
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.csprojAssemblyReference.cache
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.AssemblyInfoInputs.cache
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.AssemblyInfo.cs
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.RazorTargetAssemblyInfo.cache
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\staticwebassets\CustomeIdentity.StaticWebAssets.Manifest.cache
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\staticwebassets\CustomeIdentity.StaticWebAssets.xml
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.csproj.CopyComplete
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ahmed\source\repos\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\CustomeIdentity.exe
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\CustomeIdentity.deps.json
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\CustomeIdentity.runtimeconfig.json
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\CustomeIdentity.runtimeconfig.dev.json
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\CustomeIdentity.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\CustomeIdentity.pdb
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.csprojAssemblyReference.cache
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.AssemblyInfoInputs.cache
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.AssemblyInfo.cs
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.RazorTargetAssemblyInfo.cache
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.csproj.CopyComplete
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\staticwebassets\CustomeIdentity.StaticWebAssets.Manifest.cache
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\staticwebassets\CustomeIdentity.StaticWebAssets.xml
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.pdb
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.genruntimeconfig.cache
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\IdentityHelper.Library.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\bin\Debug\netcoreapp3.1\IdentityHelper.Library.pdb
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\CustomeIdentity\obj\Debug\netcoreapp3.1\CustomeIdentity.MvcApplicationPartsAssemblyInfo.cache

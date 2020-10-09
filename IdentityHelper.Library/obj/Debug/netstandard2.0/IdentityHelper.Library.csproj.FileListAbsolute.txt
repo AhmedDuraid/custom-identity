@@ -1,0 +1,9 @@
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\IdentityHelper.Library\bin\Debug\netstandard2.0\IdentityHelper.Library.deps.json
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\IdentityHelper.Library\bin\Debug\netstandard2.0\IdentityHelper.Library.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\IdentityHelper.Library\obj\Debug\netstandard2.0\IdentityHelper.Library.AssemblyInfoInputs.cache
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\IdentityHelper.Library\obj\Debug\netstandard2.0\IdentityHelper.Library.AssemblyInfo.cs
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\IdentityHelper.Library\obj\Debug\netstandard2.0\IdentityHelper.Library.csprojAssemblyReference.cache
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\IdentityHelper.Library\bin\Debug\netstandard2.0\IdentityHelper.Library.pdb
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\IdentityHelper.Library\obj\Debug\netstandard2.0\IdentityHelper.Library.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\IdentityHelper.Library\obj\Debug\netstandard2.0\IdentityHelper.Library.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\IdentityHelper.Library\obj\Debug\netstandard2.0\IdentityHelper.Library.pdb

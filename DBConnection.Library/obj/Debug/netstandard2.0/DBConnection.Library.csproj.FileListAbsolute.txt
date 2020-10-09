@@ -1,0 +1,9 @@
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\DBConnection.Library\bin\Debug\netstandard2.0\DBConnection.Library.deps.json
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\DBConnection.Library\bin\Debug\netstandard2.0\DBConnection.Library.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\DBConnection.Library\obj\Debug\netstandard2.0\DBConnection.Library.csprojAssemblyReference.cache
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\DBConnection.Library\obj\Debug\netstandard2.0\DBConnection.Library.AssemblyInfoInputs.cache
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\DBConnection.Library\obj\Debug\netstandard2.0\DBConnection.Library.AssemblyInfo.cs
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\DBConnection.Library\bin\Debug\netstandard2.0\DBConnection.Library.pdb
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\DBConnection.Library\obj\Debug\netstandard2.0\DBConnection.Library.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\DBConnection.Library\obj\Debug\netstandard2.0\DBConnection.Library.dll
+C:\Users\ahmed\Desktop\Coding Material\Projects\CustomeIdentity\DBConnection.Library\obj\Debug\netstandard2.0\DBConnection.Library.pdb
