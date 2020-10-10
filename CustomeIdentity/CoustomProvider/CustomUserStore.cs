@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace CustomeIdentity.CoustomProvider
 {
     public class CustomUserStore : IUserStore<ApplicationUser>, IUserPasswordStore<ApplicationUser>
+        , IUserEmailStore<ApplicationUser>
     {
         private readonly string _connectionString;
         UserDataAccess userDataAccess;
@@ -112,6 +113,45 @@ namespace CustomeIdentity.CoustomProvider
         public Task<bool> HasPasswordAsync(ApplicationUser user, CancellationToken cancellationToken)
         {
             return Task.FromResult(user.PasswordHash != null);
+        }
+        // email store 
+        public async Task<ApplicationUser> FindByEmailAsync(string normalizedEmail, CancellationToken cancellationToken)
+        {
+            var Parameters = new { @UserEmail = normalizedEmail };
+
+            return await userDataAccess.LoadUserByEmail<ApplicationUser, dynamic>(_connectionString, Parameters, "dbo.spUsers_GetUserByEmail");
+            throw new NotImplementedException();
+        }
+
+        public Task<string> GetEmailAsync(ApplicationUser user, CancellationToken cancellationToken)
+        {
+            return Task.FromResult(user.Email);
+        }
+
+        public Task<bool> GetEmailConfirmedAsync(ApplicationUser user, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<string> GetNormalizedEmailAsync(ApplicationUser user, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task SetEmailAsync(ApplicationUser user, string email, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task SetEmailConfirmedAsync(ApplicationUser user, bool confirmed, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task SetNormalizedEmailAsync(ApplicationUser user, string normalizedEmail, CancellationToken cancellationToken)
+        {
+            user.Email = normalizedEmail;
+            return Task.FromResult(0);
         }
     }
 }

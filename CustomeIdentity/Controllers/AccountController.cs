@@ -5,13 +5,16 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+
 
 namespace CustomeIdentity.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "admin")]
+
     public class AccountController : ControllerBase
     {
         private readonly UserManager<ApplicationUser> _userManager;
@@ -60,12 +63,14 @@ namespace CustomeIdentity.Controllers
 
         }
 
+        // for testing
         [HttpGet]
-        [Authorize]
-        public IEnumerable<string> Get(string name)
+        [Authorize(Roles = "Manager")]
+        public IEnumerable<string> Get()
         {
-
-            var result = _userManager.FindByNameAsync(name).Result.Id.ToString();
+            // to take the user Id from the token 
+            // it is good idea to not ask the user what his ID 
+            string result = User.Claims.First(i => i.Type == ClaimTypes.NameIdentifier).Value;
 
             return new string[] { "value1", result };
         }

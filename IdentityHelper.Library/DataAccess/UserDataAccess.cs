@@ -32,5 +32,13 @@ namespace IdentityHelper.Library.DataAccess
             return await sqlDataAccess.LoadData<T, U>(parameters, connectionString, procedureName);
 
         }
+
+        public async Task<T> LoadUserByEmail<T, U>(string connectionString, U parameters, string procedureName)
+        {
+
+
+            return await sqlDataAccess.LoadData<T, U>(parameters, connectionString, procedureName);
+
+        }
     }
 }
