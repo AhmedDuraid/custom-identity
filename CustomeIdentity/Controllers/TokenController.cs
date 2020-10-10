@@ -1,5 +1,5 @@
-﻿using CustomeIdentity.CoustomProvider;
-using CustomeIdentity.Models;
+﻿using CustomIdentity.CoustomProvider;
+using CustomIdentity.Models;
 using IdentityHelper.Library.DataAccess;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -14,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace CustomeIdentity.Controllers
+namespace CustomIdentity.Controllers
 {
     public class TokenController : ControllerBase
     {
@@ -27,6 +27,7 @@ namespace CustomeIdentity.Controllers
             _userManager = userManager;
             _userRoleDataAccess = new UserRoleDataAccess();
             _connectionString = configuration.GetConnectionString("DefaultConnection");
+            //_connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         }
 
         [HttpGet]
@@ -53,7 +54,6 @@ namespace CustomeIdentity.Controllers
 
         private async Task<bool> IsValidUsernameAndPassword(string username, string password)
         {
-            // check if implemt this method
             var user = await _userManager.FindByEmailAsync(username);
 
             return await _userManager.CheckPasswordAsync(user, password);
@@ -61,9 +61,13 @@ namespace CustomeIdentity.Controllers
 
         }
 
+        // create new token
         private async Task<dynamic> GenerateToken(string username)
         {
+            // get user information 
             var user = await _userManager.FindByEmailAsync(username);
+
+            // get all this user roles to be added to the claim
 
             var roles = _userRoleDataAccess.LoadUserRoleByID<UserRoleModel, dynamic>
                   (_connectionString, new { @UserId = user.Id }, "dbo.spUserRole_GetUserRoleById");
@@ -76,12 +80,14 @@ namespace CustomeIdentity.Controllers
                new Claim(JwtRegisteredClaimNames.Exp, new DateTimeOffset(DateTime.Now.AddDays(1)).ToUnixTimeSeconds().ToString())
             };
 
+            // adding user roles to the claim 
             foreach (var role in roles)
             {
                 claims.Add(new Claim(ClaimTypes.Role, role.Name));
 
             }
 
+            // create new token
             var token = new JwtSecurityToken(
                 new JwtHeader(
                     new SigningCredentials(
@@ -96,10 +102,6 @@ namespace CustomeIdentity.Controllers
             };
 
             return output;
-
-
-
-
         }
     }
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityHelper.Library", "IdentityHelper.Library\IdentityHelper.Library.csproj", "{6E1D6091-F137-427B-B044-72788E3875AD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomeIdentity", "CustomeIdentity\CustomeIdentity.csproj", "{B15E9281-C904-4FC6-97B1-A820040EF4C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomIdentity", "CustomeIdentity\CustomIdentity.csproj", "{B15E9281-C904-4FC6-97B1-A820040EF4C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

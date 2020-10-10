@@ -1,6 +1,6 @@
 using System;
 
-namespace CustomeIdentity
+namespace CustomIdentity
 {
     public class WeatherForecast
     {

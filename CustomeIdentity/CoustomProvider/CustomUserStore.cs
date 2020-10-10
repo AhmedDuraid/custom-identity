@@ -5,7 +5,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CustomeIdentity.CoustomProvider
+namespace CustomIdentity.CoustomProvider
 {
     public class CustomUserStore : IUserStore<ApplicationUser>, IUserPasswordStore<ApplicationUser>
         , IUserEmailStore<ApplicationUser>

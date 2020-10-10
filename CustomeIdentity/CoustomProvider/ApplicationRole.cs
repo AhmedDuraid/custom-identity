@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CustomeIdentity.CoustomProvider
+namespace CustomIdentity.CoustomProvider
 {
     public class ApplicationRole
     {

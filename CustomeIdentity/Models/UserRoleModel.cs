@@ -1,4 +1,4 @@
-﻿namespace CustomeIdentity.Models
+﻿namespace CustomIdentity.Models
 {
     public class UserRoleModel
     {

@@ -4279,9 +4279,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmed\\Desktop\\Coding Material\\Projects\\CustomeIdentity\\CustomeIdentity\\CustomeIdentity.csproj",
-      "projectName": "CustomeIdentity",
-      "projectPath": "C:\\Users\\ahmed\\Desktop\\Coding Material\\Projects\\CustomeIdentity\\CustomeIdentity\\CustomeIdentity.csproj",
+      "projectUniqueName": "C:\\Users\\ahmed\\Desktop\\Coding Material\\Projects\\CustomeIdentity\\CustomeIdentity\\CustomIdentity.csproj",
+      "projectName": "CustomIdentity",
+      "projectPath": "C:\\Users\\ahmed\\Desktop\\Coding Material\\Projects\\CustomeIdentity\\CustomeIdentity\\CustomIdentity.csproj",
       "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ahmed\\Desktop\\Coding Material\\Projects\\CustomeIdentity\\CustomeIdentity\\obj\\",
       "projectStyle": "PackageReference",

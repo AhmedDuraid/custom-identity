@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CustomeIdentity.Models
+namespace CustomIdentity.Models
 {
     public class RegisterModel
     {

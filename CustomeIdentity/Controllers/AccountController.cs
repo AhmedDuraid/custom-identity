@@ -1,5 +1,5 @@
-﻿using CustomeIdentity.CoustomProvider;
-using CustomeIdentity.Models;
+﻿using CustomIdentity.CoustomProvider;
+using CustomIdentity.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -10,7 +10,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 
 
-namespace CustomeIdentity.Controllers
+namespace CustomIdentity.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -65,12 +65,12 @@ namespace CustomeIdentity.Controllers
 
         // for testing
         [HttpGet]
-        [Authorize(Roles = "Manager")]
+        [Authorize(Roles = "Admin, Manager")]
         public IEnumerable<string> Get()
         {
             // to take the user Id from the token 
             // it is good idea to not ask the user what his ID 
-            string result = User.Claims.First(i => i.Type == ClaimTypes.NameIdentifier).Value;
+            string result = User.Claims.First(i => i.Type == ClaimTypes.Name).Value;
 
             return new string[] { "value1", result };
         }
