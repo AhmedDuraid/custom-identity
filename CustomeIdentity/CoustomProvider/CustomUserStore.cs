@@ -10,16 +10,16 @@ namespace CustomeIdentity.CoustomProvider
     public class CustomUserStore : IUserStore<ApplicationUser>, IUserPasswordStore<ApplicationUser>
     {
         private readonly string _connectionString;
+        UserDataAccess userDataAccess;
 
         public CustomUserStore(IConfiguration configuration)
         {
             _connectionString = configuration.GetConnectionString("DefaultConnection");
+            userDataAccess = new UserDataAccess();
         }
         public async Task<IdentityResult> CreateAsync(ApplicationUser user, CancellationToken cancellationToken)
         {
             cancellationToken.ThrowIfCancellationRequested();
-
-            UserDataAccess userDataAccess = new UserDataAccess();
 
             var p = new
             {
@@ -31,28 +31,13 @@ namespace CustomeIdentity.CoustomProvider
 
             await userDataAccess.AddNewUser<dynamic>(_connectionString, p, "dbo.spUsers_AddUser");
 
-            //using (var connection = new SqlConnection(_connectionString))
-            //{
-            //    await connection.ExecuteAsync("dbo.spUsers_AddUser", new
-            //    {
-            //        @UserId = user.Id.ToString(),
-            //        @UserName = user.UserName.ToString(),
-            //        @Email = user.Email.ToString(),
-            //        @Password = user.PasswordHash.ToString()
-            //    }, commandType: CommandType.StoredProcedure);
-
-            //}
-
-
-
-
             return IdentityResult.Success;
 
-            throw new NotImplementedException();
         }
 
         public Task<IdentityResult> DeleteAsync(ApplicationUser user, CancellationToken cancellationToken)
         {
+
             throw new NotImplementedException();
         }
 
@@ -61,38 +46,25 @@ namespace CustomeIdentity.CoustomProvider
             //
         }
 
-        public Task<ApplicationUser> FindByIdAsync(string userId, CancellationToken cancellationToken)
+        public async Task<ApplicationUser> FindByIdAsync(string userId, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var Parameters = new { @UserId = userId.ToString() };
+
+            return await userDataAccess.LoadUserById<ApplicationUser, dynamic>
+                (_connectionString, Parameters, "dbo.spUsers_GetUserById");
+
         }
 
         public async Task<ApplicationUser> FindByNameAsync(string normalizedUserName, CancellationToken cancellationToken)
         {
             cancellationToken.ThrowIfCancellationRequested();
 
-
-            UserDataAccess userDataAccess = new UserDataAccess();
-
             var p = new
             {
                 @NormalizedUserName = normalizedUserName
             };
+
             return await userDataAccess.LoadUserByName<ApplicationUser, dynamic>(_connectionString, p, "dbo.spUsers_GetUserByName");
-
-            //var rows = await connection.QuerySingleOrDefaultAsync<ApplicationUser>("dbo.spUsers_GetUserByName",
-            //    new { @NormalizedUserName = normalizedUserName },
-            //    commandType: CommandType.StoredProcedure);
-
-            //return rows;
-
-
-            // from the net
-            //using (var connection = new SqlConnection(_connectionString))
-            //{
-            //    //  await connection.OpenAsync(cancellationToken);
-            //    return await connection.QuerySingleOrDefaultAsync<ApplicationUser>($@"SELECT * FROM dbo.Users
-            //    WHERE [NormalizedUserName] = @{nameof(normalizedUserName)}", new { normalizedUserName });
-            //}
         }
 
         public Task<string> GetNormalizedUserNameAsync(ApplicationUser user, CancellationToken cancellationToken)

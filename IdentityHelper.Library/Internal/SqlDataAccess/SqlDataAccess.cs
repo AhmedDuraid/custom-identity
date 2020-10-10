@@ -7,6 +7,7 @@ namespace IdentityHelper.Library.Internal.SqlDataAccess
 {
     internal class SqlDataAccess
     {
+
         public async Task SaveData<T>(string connectionString, string procedureName, T parameters)
         {
 

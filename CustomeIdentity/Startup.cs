@@ -28,6 +28,15 @@ namespace CustomeIdentity
             // Identity Services
             services.AddTransient<IUserStore<ApplicationUser>, CustomUserStore>();
             services.AddTransient<IRoleStore<ApplicationRole>, CustomRoleStore>();
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 1;
+            });
 
             //string connectionString = Configuration.GetConnectionString("DefaultConnection");
             //services.AddTransient<SqlConnection>(e => new SqlConnection(connectionString));
@@ -52,11 +61,9 @@ namespace CustomeIdentity
 
             app.UseRouting();
 
+            // must follow this order 
             app.UseAuthentication();
-
             app.UseAuthorization();
-
-            //app.UseIdentity();
 
             app.UseEndpoints(endpoints =>
             {

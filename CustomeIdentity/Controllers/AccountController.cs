@@ -1,5 +1,6 @@
 ﻿using CustomeIdentity.CoustomProvider;
 using CustomeIdentity.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -10,6 +11,7 @@ namespace CustomeIdentity.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "admin")]
     public class AccountController : ControllerBase
     {
         private readonly UserManager<ApplicationUser> _userManager;
@@ -30,7 +32,6 @@ namespace CustomeIdentity.Controllers
 
         // POST: /Account/Register
         [HttpPost]
-
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
 
@@ -60,6 +61,7 @@ namespace CustomeIdentity.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public IEnumerable<string> Get(string name)
         {
 
